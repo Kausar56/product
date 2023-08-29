@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+
+    <!-- tailwind css  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <header class="max-w-7xl mx-auto bg-[#f3f7ff]">
+        <div class="flex justify-between items-center py-[2rem]">
+            <div class="logo">
+                <h1 class="font-bold text-[#403F3F] text-[25px]">Hot Gadgets</h1>
+            </div>
+
+            <div>
+                <button class="py-3 px-5 bg-[#0D6EFD] text-[#fff] lowercase center rounded-lg">Sing up</button>
+            </div>
+        </div>  <!-- head section end-->
+
+
+
+        <!-- Banner section start-->
+
+    </header>
+
+
+
+    <main class="max-w-7xl mx-auto">
+
+
+        <!-- search section  -->
+
+        <section class="my-10 ">
+            <div class="flex justify-center items-center flex-col">
+                <h1 class="text-[#100F0F] text-[35px] font-semibold my-5">Search your phone</h1>
+               <div class="join ">
+                <input id="search-field" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs join-item" />
+              
+                   
+                <button onclick="findPhone()" class="btn join-item">Search</button>
+               </div>
+                  </div>
+            </div>
+        </section>
+
+
+
+
+        <section>
+
+             <!-- loading spinner  -->
+
+             <div id="loading" class="flex justify-center items-center hidden" title="please wait">
+                <span class="loading loading-bars loading-lg" ></span>
+
+             </div>
+
+            <!-- product div  -->
+            <div id="phone-container" class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-5 my-5 mx-4">
+
+      
+                
+                  </div>
+
+
+                  <!-- show all product  -->
+                <div id="show-all" class="flex justify-center items-center my-5 hidden">
+                    <button class="py-3 px-6 text-white bg-blue-400 rounded-md inset-2 hover:bg-blue-600 duration-500">Show All</button>
+                </div>
+
+
+
+                <!--  button model -->
+
+<!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+   <div id="modalDisplay-container" class="flex justify-center items-center p-5 flex-col">
+
+
+
+   </div>
+  </form>
+</dialog>                 
+        </section>
+
+
+
+    </main>
+
+
+
+    <script src="js/phone.js"></script>
+</body>
+</html>
